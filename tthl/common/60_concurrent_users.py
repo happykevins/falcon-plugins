@@ -4,11 +4,12 @@
 import os
 import json
 import time
+import socket
 
 data = [
         {
             'metric': 'tthl.common.cu',
-            'endpoint': '',
+            'endpoint': socket.gethostname(),
             'timestamp': int(time.time()),
             'step': 60,
             #'value': int(os.popen("who | wc -l").read().strip()),
