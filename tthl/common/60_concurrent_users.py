@@ -14,6 +14,7 @@ data = [
             #'value': int(os.popen("who | wc -l").read().strip()),
 	    'value': int(os.popen("netstat -anpt | grep \"8889\" | grep ESTABLISHED | wc -l").read().strip()),
             'counterType': 'GAUGE',
+			"tags": "",
             }
         ]
 
